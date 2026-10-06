@@ -1,0 +1,48 @@
+# Основные настройки плагина
+# Время можно указывать в форматах: 30s, 2m, 1h, 1h30m, 1h20m30s
+
+modules:
+  # Модуль спавна порталов в верхнем мире
+  overworld-nether-portal-spawner:
+    enabled: true
+    debug: false
+    min-interval: "20h"
+    max-interval: "26h"
+    search-radius: 50
+    max-attempts: 20
+    min-distance-to-other-portals: 10
+    play-effects: true
+
+  # Модуль роста скалка в Энде
+  end-sculk-grow:
+    enabled: true
+    debug: false
+    min-interval: "30m"      # Минимальный интервал между событиями
+    max-interval: "2h"       # Максимальный интервал между событиями
+    max-distance: 20         # Максимальное расстояние от игрока
+    min-growth: 1            # Минимальное количество жил за событие
+    max-growth: 5            # Максимальное количество жил за событие
+    growth-mode: "random"    # Режим роста: "scattered" (вразброс), "cluster" (кластером) или "random" (случайный)
+    play-effects: true       # Воспроизводить эффекты при спавне
+
+  # Модуль звуков в Незере
+  nether-sounds:
+    enabled: true
+    debug: false
+    min-interval: "30s"      # Минимальный интервал между звуками
+    max-interval: "2m"       # Максимальный интервал между звуками
+    volume: 1.0              # Громкость
+    pitch: 1.0               # Высота тона
+    use-custom-sounds: false # Использовать кастомные звуки
+    sounds:
+      - "AMBIENT_NETHER_WASTES_MOOD"
+      - "AMBIENT_SOUL_SAND_VALLEY_MOOD"
+      - "AMBIENT_WARPED_FOREST_MOOD"
+      - "ENTITY_GHAST_SCREAM"
+      - "ENTITY_GHAST_HURT"
+      - "ENTITY_GHAST_SHOOT"
+      - "ENTITY_WITHER_SKELETON_DEATH"
+      - "ENTITY_WITHER_SKELETON_HURT"
+    custom-sounds:
+      - "minecraft:entity.wither.spawn"
+      - "minecraft:entity.ender_dragon.growl"

@@ -1,0 +1,7 @@
+name: Demonstration
+version: '1.0-SNAPSHOT'
+main: StudentKB.demonstration.Demonstration
+api-version: '1.21'
+load: STARTUP
+authors: [ StudentKB ]
+description: Plugin for additional comands
